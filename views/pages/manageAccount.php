@@ -296,9 +296,12 @@ include "../header.php";
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Informasi Akun</h4>
-                                <button class="btn btn-info">Tambah</button>
+                                <button onclick="tambahAkun()" class="btn btn-info">Tambah</button>
                                 <br/>
                                 <br/>
+
+
+
                                 <div class="table-responsive">
                                     <table id="TAcrimAkun" class="table table-striped table-bordered" style="width:100%">
                                         <thead>
@@ -315,31 +318,44 @@ include "../header.php";
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>System Architect</td>
-                                            <td>Edinburgh</td>
-                                            <td>61</td>
-                                            <td>2011/04/25</td>
+                                        <?php
 
-                                            <td>
-                                                <a class="nav-link" href="index.php">
-                                                    <span class="iconify" data-icon="mdi:clipboard-edit-outline" data-inline="false"></span>
-                                                    <span>Edit</span>
-
-                                                </a>
-                                            </td>
-                                            <td>
+                                        $sql = "SELECT * FROM user LEFT JOIN pangkat ON user.id_pangkat=pangkat.id_pangkat";
+                                        $data=mysqli_query($conn,$sql);
 
 
-                                                <a class="nav-link" href="index.php">
-                                                    <span class="iconify" data-icon="mdi:delete" data-inline="false"></span>
-                                                    <span>Delete</span>
+                                        while($d = mysqli_fetch_array($data)){
+                                            ?>
 
-                                                </a>
-                                            </td>
+                                            <tr>
+                                                <td><?php echo $d['no_polisi'] ?></td>
+                                                <td><?php echo $d['pangkat'] ?></td>
+                                                <td><?php echo $d['nama'] ?></td>
+                                                <td><?php echo $d['username'] ?></td>
+                                                <td><?php echo $d['password'] ?></td>
 
-                                        </tr>
+                                                <td>
+                                                    <a onclick="editUser('<?php echo $d["no_polisi"] ?>')" class="nav-link" href="#">
+                                                        <span class="iconify" data-icon="mdi:clipboard-edit-outline" data-inline="false"></span>
+                                                        <span>Edit</span>
+
+                                                    </a>
+                                                </td>
+                                                <td>
+
+
+                                                    <a onclick="deleteUser('<?php echo $d["no_polisi"] ?>')" class="nav-link" href="#">
+                                                        <span class="iconify" data-icon="mdi:delete" data-inline="false"></span>
+                                                        <span>Delete</span>
+
+                                                    </a>
+                                                </td>
+
+                                            </tr>
+
+                                            <?php
+                                        }
+                                        ?>
 
 
                                         </tbody>

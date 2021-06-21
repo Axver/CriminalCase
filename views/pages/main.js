@@ -1,5 +1,6 @@
 $(document).ready(function() {
     $('#TAcrim').DataTable();
+    $('#TAcrimKU').DataTable();
     $('#TAcrim1').DataTable();
     $('#TAcrimPangkat').DataTable();
     $('#TAcrimAkun').DataTable();
@@ -153,4 +154,54 @@ function saveEditAkunAjax()
         $('#editPangkat').modal('hide');
     });
 
+}
+
+function tambahJenisLaporan()
+{
+    $('#jenisLaporan').modal('show');
+
+}
+
+function saveJenisLaporanAjax()
+{
+    let id_jenis= $("#id_jenis").val();
+    let nama_laporan= $("#nama_laporan").val();
+
+    $.post('../../php/tambahJenisLaporan.php', {id:id_jenis, nama:nama_laporan}, function(response){
+        // console.log(response);
+        swal(response) .then((value) => {
+            location.reload();
+    });;
+        $('#tambahPangkat').modal('hide');
+    });
+}
+
+function tambahField(id)
+{
+    $("#hiddenField").val(id);
+    $('#tambahField').modal('show');
+
+}
+
+function  fieldAdd() {
+    $data=$("#genCode").val();
+    $ambil=$("#fieldSatuan").val();
+
+    $data=$ambil+"|"+$data;
+    $("#genCode").val($data);
+
+}
+
+function saveFieldAjax()
+{
+    let id_laporan= $("#hiddenField").val();
+    let code= $("#genCode").val();
+
+    $.post('../../php/tambahField.php', {id_laporan:id_laporan,code:code}, function(response){
+        // console.log(response);
+        swal(response) .then((value) => {
+            location.reload();
+    });;
+        $('#tambahPangkat').modal('hide');
+    });
 }

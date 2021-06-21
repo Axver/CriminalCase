@@ -3,6 +3,8 @@
 <!--Header Disini-->
 <?php
 include "../header.php";
+include "laporanModal.php";
+include "../../php/connect.php";
 ?>
 <body>
 <div class="container-scroller">
@@ -215,67 +217,79 @@ include "../header.php";
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Jenis Laporan</h4>
+
+
+
+
+                                <button onclick="tambahJenisLaporan()" class="btn btn-info">Tambah</button>
                                 <div class="table-responsive">
-                                    <table id="TAcrim" class="table table-striped table-bordered" style="width:100%">
+                                    <table id="TAcrimKU" class="table table-striped table-bordered" style="width:100%">
                                         <thead>
                                         <tr>
                                             <th>Id</th>
                                             <th>Nama Laporan</th>
                                             <th>Template</th>
                                             <th>Field Code</th>
+                                            <th>Delete</th>
 
 
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>System Architect</td>
-                                            <td>Edinburgh</td>
-                                            <td>61</td>
-                                            <td>2011/04/25</td>
-                                            <td>
-                                                <a class="nav-link" href="index.php">
-                                                    <span class="iconify" data-icon="mdi:information" data-inline="false"></span>
-                                                    <span>Info</span>
 
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a class="nav-link" href="index.php">
-                                                    <span class="iconify" data-icon="mdi:printer-outline" data-inline="false"></span>
-                                                    <span>Print</span>
+                                        <?php
 
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a class="nav-link" href="index.php">
-                                                    <span class="iconify" data-icon="mdi:clipboard-edit-outline" data-inline="false"></span>
-                                                    <span>Edit</span>
+                                        $sql = "SELECT * FROM jenis_laporan ";
+                                        $data=mysqli_query($conn,$sql);
 
-                                                </a>
 
-                                                <a class="nav-link" href="index.php">
-                                                    <span class="iconify" data-icon="mdi:delete" data-inline="false"></span>
-                                                    <span>Delete</span>
+                                        while($d = mysqli_fetch_array($data)){
+                                            ?>
 
-                                                </a>
-                                            </td>
+                                            <tr>
 
-                                        </tr>
 
+                                                <td><?php echo $d['id_jenis']; ?></td>
+                                                <td><?php echo $d['nama_laporan']; ?></td>
+                                                <td>
+                                                    <a class="nav-link" href="index.php">
+                                                        <span class="iconify" data-icon="mdi:information" data-inline="false"></span>
+                                                        <span>Add Template</span>
+
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a onclick="tambahField('<?php echo $d["id_jenis"]; ?>')" class="nav-link" href="#">
+                                                        <span class="iconify" data-icon="mdi:printer-outline" data-inline="false"></span>
+                                                        <span>Tambah Field</span>
+
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a class="nav-link" href="index.php">
+                                                        <span class="iconify" data-icon="mdi:printer-outline" data-inline="false"></span>
+                                                        <span>Delete</span>
+
+                                                    </a>
+                                                </td>
+
+
+
+
+                                            </tr>
+
+                                            <?php
+                                        }
+                                        ?>
 
                                         </tbody>
                                         <tfoot>
                                         <tr>
-                                            <th>No</th>
-                                            <th>Nomor Laporan</th>
-                                            <th>Jenis Kejadian</th>
-                                            <th>Pelapor</th>
-                                            <th>Petugas</th>
-                                            <th>Detail</th>
-                                            <th>Print</th>
-                                            <th>Edit/Delete</th>
+                                            <th>Id</th>
+                                            <th>Nama Laporan</th>
+                                            <th>Template</th>
+                                            <th>Field Code</th>
+                                            <th>Delete</th>
 
                                         </tr>
                                         </tfoot>
@@ -292,69 +306,60 @@ include "../header.php";
                             <div class="card-body">
                                 <h4 class="card-title">Field Code</h4>
                                 <div class="table-responsive">
+
+
+
+
                                     <table id="TAcrim1" class="table table-striped table-bordered" style="width:100%">
                                         <thead>
                                         <tr>
-                                            <th>No</th>
-                                            <th>Nomor Laporan</th>
-                                            <th>Jenis Kejadian</th>
-                                            <th>Pelapor</th>
-                                            <th>Petugas</th>
-                                            <th>Detail</th>
-                                            <th>Print</th>
-                                            <th>Edit/Delete</th>
+                                            <th>Id Jenis</th>
+                                            <th>Kode</th>
+                                            <th>Delete</th>
+
 
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>System Architect</td>
-                                            <td>Edinburgh</td>
-                                            <td>61</td>
-                                            <td>2011/04/25</td>
-                                            <td>
-                                                <a class="nav-link" href="index.php">
-                                                    <span class="iconify" data-icon="mdi:information" data-inline="false"></span>
-                                                    <span>Info</span>
 
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a class="nav-link" href="index.php">
-                                                    <span class="iconify" data-icon="mdi:printer-outline" data-inline="false"></span>
-                                                    <span>Print</span>
+                                        <?php
 
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a class="nav-link" href="index.php">
-                                                    <span class="iconify" data-icon="mdi:clipboard-edit-outline" data-inline="false"></span>
-                                                    <span>Edit</span>
+                                        $sql = "SELECT * FROM field_code ";
+                                        $data=mysqli_query($conn,$sql);
 
-                                                </a>
 
-                                                <a class="nav-link" href="index.php">
-                                                    <span class="iconify" data-icon="mdi:delete" data-inline="false"></span>
-                                                    <span>Delete</span>
+                                        while($d = mysqli_fetch_array($data)){
+                                            ?>
 
-                                                </a>
-                                            </td>
+                                            <tr>
+                                                <td><?php echo $d['id_jenis']; ?></td>
+                                                <td><?php echo $d['field_name']; ?></td>
 
-                                        </tr>
+
+                                                <td>
+
+
+                                                    <a class="nav-link" href="index.php">
+                                                        <span class="iconify" data-icon="mdi:delete" data-inline="false"></span>
+                                                        <span>Delete</span>
+
+                                                    </a>
+                                                </td>
+
+                                            </tr>
+
+
+                                            <?php
+                                        }
+                                        ?>
 
 
                                         </tbody>
                                         <tfoot>
                                         <tr>
-                                            <th>No</th>
-                                            <th>Nomor Laporan</th>
-                                            <th>Jenis Kejadian</th>
-                                            <th>Pelapor</th>
-                                            <th>Petugas</th>
-                                            <th>Detail</th>
-                                            <th>Print</th>
-                                            <th>Edit/Delete</th>
+                                            <th>Id Jenis</th>
+                                            <th>Kode</th>
+                                            <th>Delete</th>
 
                                         </tr>
                                         </tfoot>

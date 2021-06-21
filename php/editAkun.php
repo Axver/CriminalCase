@@ -3,7 +3,7 @@
 include "../php/connect.php";
 
 $nopol=$_POST['id'];
-$sql = "SELECT * FROM user WHERE no_polisi='$nopol'";
+$sql = "SELECT * FROM users WHERE no_polisi='$nopol'";
 
 //echo $sql;
 $hasil = array(

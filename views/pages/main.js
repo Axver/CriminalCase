@@ -1,5 +1,6 @@
 $(document).ready(function() {
     $('#TAcrim').DataTable();
+    $('#TAcrim1').DataTable();
     $('#TAcrimPangkat').DataTable();
     $('#TAcrimAkun').DataTable();
 } );

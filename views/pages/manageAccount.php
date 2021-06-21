@@ -320,7 +320,7 @@ include "../header.php";
                                         <tbody>
                                         <?php
 
-                                        $sql = "SELECT * FROM user LEFT JOIN pangkat ON user.id_pangkat=pangkat.id_pangkat";
+                                        $sql = "SELECT * FROM users LEFT JOIN pangkat ON users.id_pangkat=pangkat.id_pangkat";
                                         $data=mysqli_query($conn,$sql);
 
 

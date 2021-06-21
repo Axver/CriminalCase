@@ -1,6 +1,6 @@
 <?php
 $servername = "localhost";
-$database = "takrim";
+$database = "tekri";
 $username = "root";
 $password = "";
 

@@ -214,9 +214,85 @@ include "../header.php";
                     <div class="col-12 grid-margin">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Order Status</h4>
+                                <h4 class="card-title">Jenis Laporan</h4>
                                 <div class="table-responsive">
                                     <table id="TAcrim" class="table table-striped table-bordered" style="width:100%">
+                                        <thead>
+                                        <tr>
+                                            <th>Id</th>
+                                            <th>Nama Laporan</th>
+                                            <th>Template</th>
+                                            <th>Field Code</th>
+
+
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>
+                                                <a class="nav-link" href="index.php">
+                                                    <span class="iconify" data-icon="mdi:information" data-inline="false"></span>
+                                                    <span>Info</span>
+
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a class="nav-link" href="index.php">
+                                                    <span class="iconify" data-icon="mdi:printer-outline" data-inline="false"></span>
+                                                    <span>Print</span>
+
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a class="nav-link" href="index.php">
+                                                    <span class="iconify" data-icon="mdi:clipboard-edit-outline" data-inline="false"></span>
+                                                    <span>Edit</span>
+
+                                                </a>
+
+                                                <a class="nav-link" href="index.php">
+                                                    <span class="iconify" data-icon="mdi:delete" data-inline="false"></span>
+                                                    <span>Delete</span>
+
+                                                </a>
+                                            </td>
+
+                                        </tr>
+
+
+                                        </tbody>
+                                        <tfoot>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Nomor Laporan</th>
+                                            <th>Jenis Kejadian</th>
+                                            <th>Pelapor</th>
+                                            <th>Petugas</th>
+                                            <th>Detail</th>
+                                            <th>Print</th>
+                                            <th>Edit/Delete</th>
+
+                                        </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div class="col-12 grid-margin">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Field Code</h4>
+                                <div class="table-responsive">
+                                    <table id="TAcrim1" class="table table-striped table-bordered" style="width:100%">
                                         <thead>
                                         <tr>
                                             <th>No</th>

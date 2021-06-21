@@ -4,7 +4,7 @@ include "../php/connect.php";
 
 $nopolis=$_POST['id'];
 
-$sql = "DELETE FROM user WHERE no_polisi='$nopolis'";
+$sql = "DELETE FROM users WHERE no_polisi='$nopolis'";
 
 if ($conn->query($sql) === TRUE) {
     echo "Record deleted successfully";

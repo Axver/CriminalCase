@@ -8,7 +8,7 @@ $nama=$_POST['nama'];
 $username=$_POST['username'];
 $password=$_POST['password'];
 
-$sql = "UPDATE user SET no_polisi='$no_poisi', id_pangkat='$pangkat',nama='$nama',username='username',password='password' WHERE no_polisi='$no_poisi'";
+$sql = "UPDATE users SET no_polisi='$no_poisi', id_pangkat='$pangkat',nama='$nama',username='username',password='password' WHERE no_polisi='$no_poisi'";
 
 if ($conn->query($sql) === TRUE) {
     echo "Record updated successfully";

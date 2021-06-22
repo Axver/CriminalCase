@@ -251,6 +251,44 @@ include "../../php/connect.php"
                     </div>
                 </div>
 
+                <div class="row ">
+                    <div class="col-12 grid-margin">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Tempate Tersedia ID: <?php echo $_GET['id']; ?></h4>
+                                <br/>
+                                <br/>
+
+                                <h5>Kode Field Tersedia</h5>
+
+                                <?php
+                                $id=$_GET['id'];
+                                $sql = "SELECT * FROM jenis_laporan WHERE id_jenis='$id'";
+                                $data=mysqli_query($conn,$sql);
+
+
+                                while($d = mysqli_fetch_array($data)){
+                                    ?>
+
+                                 <?php echo $d['template']; ?>
+                                    <?php
+                                }
+                                ?>
+                                <br/>
+
+                                <br/>
+
+
+                                <br/>
+                                <br/>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
             <!-- content-wrapper ends -->

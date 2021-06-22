@@ -3,8 +3,7 @@
 <!--Header Disini-->
 <?php
 include "../header.php";
-include "laporanModal.php";
-include "../../php/connect.php";
+include "../../php/connect.php"
 ?>
 <body>
 <div class="container-scroller">
@@ -216,155 +215,37 @@ include "../../php/connect.php";
                     <div class="col-12 grid-margin">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Jenis Laporan</h4>
+                                <h4 class="card-title">Buat Template Untuk Laporan ID: <?php echo $_GET['id']; ?></h4>
+                                <br/>
+                                <br/>
+
+                                <h5>Kode Field Tersedia</h5>
+
+                                <?php
+                                $id=$_GET['id'];
+                                $sql = "SELECT * FROM field_code WHERE id_jenis='$id'";
+                                $data=mysqli_query($conn,$sql);
 
 
+                                while($d = mysqli_fetch_array($data)){
+                                    ?>
+
+                                    <button onclick="alertField('<?php echo $d['field_name']; ?>')" class="btn btn-danger"><?php echo $d['field_name']; ?></button>
 
 
-                                <button onclick="tambahJenisLaporan()" class="btn btn-info">Tambah</button>
-                                <div class="table-responsive">
-                                    <table id="TAcrimKU" class="table table-striped table-bordered" style="width:100%">
-                                        <thead>
-                                        <tr>
-                                            <th>Id</th>
-                                            <th>Nama Laporan</th>
-                                            <th>Template</th>
-                                            <th>Field Code</th>
-                                            <th>Delete</th>
+                                    <?php
+                                }
+                                ?>
+                                <br/>
 
+                                <br/>
+                                <td><textarea id="artikel" name="artikel"></textarea></td>
 
-                                        </tr>
-                                        </thead>
-                                        <tbody>
+                                <br/>
+                                <br/>
 
-                                        <?php
+                                <button onclick="saveTemplate('<?php echo $id; ?>')" class="btn btn-warning">Save Template</button>
 
-                                        $sql = "SELECT * FROM jenis_laporan ";
-                                        $data=mysqli_query($conn,$sql);
-
-
-                                        while($d = mysqli_fetch_array($data)){
-                                            ?>
-
-                                            <tr>
-
-
-                                                <td><?php echo $d['id_jenis']; ?></td>
-                                                <td><?php echo $d['nama_laporan']; ?></td>
-                                                <td>
-                                                    <a class="nav-link" href="template.php?id=<?php echo $d['id_jenis']; ?>">
-                                                        <span class="iconify" data-icon="mdi:information" data-inline="false"></span>
-                                                        <span>Add Template</span>
-
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a onclick="tambahField('<?php echo $d["id_jenis"]; ?>')" class="nav-link" href="#">
-                                                        <span class="iconify" data-icon="mdi:printer-outline" data-inline="false"></span>
-                                                        <span>Tambah Field</span>
-
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a class="nav-link" href="index.php">
-                                                        <span class="iconify" data-icon="mdi:printer-outline" data-inline="false"></span>
-                                                        <span>Delete</span>
-
-                                                    </a>
-                                                </td>
-
-
-
-
-                                            </tr>
-
-                                            <?php
-                                        }
-                                        ?>
-
-                                        </tbody>
-                                        <tfoot>
-                                        <tr>
-                                            <th>Id</th>
-                                            <th>Nama Laporan</th>
-                                            <th>Template</th>
-                                            <th>Field Code</th>
-                                            <th>Delete</th>
-
-                                        </tr>
-                                        </tfoot>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row ">
-                    <div class="col-12 grid-margin">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Field Code</h4>
-                                <div class="table-responsive">
-
-
-
-
-                                    <table id="TAcrim1" class="table table-striped table-bordered" style="width:100%">
-                                        <thead>
-                                        <tr>
-                                            <th>Id Jenis</th>
-                                            <th>Kode</th>
-                                            <th>Delete</th>
-
-
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-
-                                        <?php
-
-                                        $sql = "SELECT * FROM field_code ";
-                                        $data=mysqli_query($conn,$sql);
-
-
-                                        while($d = mysqli_fetch_array($data)){
-                                            ?>
-
-                                            <tr>
-                                                <td><?php echo $d['id_jenis']; ?></td>
-                                                <td><?php echo $d['field_name']; ?></td>
-
-
-                                                <td>
-
-
-                                                    <a class="nav-link" href="index.php">
-                                                        <span class="iconify" data-icon="mdi:delete" data-inline="false"></span>
-                                                        <span>Delete</span>
-
-                                                    </a>
-                                                </td>
-
-                                            </tr>
-
-
-                                            <?php
-                                        }
-                                        ?>
-
-
-                                        </tbody>
-                                        <tfoot>
-                                        <tr>
-                                            <th>Id Jenis</th>
-                                            <th>Kode</th>
-                                            <th>Delete</th>
-
-                                        </tr>
-                                        </tfoot>
-                                    </table>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -376,5 +257,19 @@ include "../../php/connect.php";
             <!-- partial:partials/_footer.html -->
             <!--      Footer Disini-->
             <?php include "../footer.php"; ?>
+
+
+<!--            Khusus untuk ini-->
+            <script src="https://cdn.tiny.cloud/1/wrldmy2htffqx9bp385ssv9fuyc4sewl90qgnxz95xvv127w/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+            <script>
+                tinymce.init({
+                    selector: 'textarea',
+                    plugins: 'a11ychecker advcode casechange formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
+                    toolbar: 'a11ycheck addcomment showcomments casechange checklist code formatpainter pageembed permanentpen table',
+                    toolbar_mode: 'floating',
+                    tinycomments_mode: 'embedded',
+                    tinycomments_author: 'Author name',
+                });
+            </script>
 </body>
 </html>

@@ -205,3 +205,22 @@ function saveFieldAjax()
         $('#tambahPangkat').modal('hide');
     });
 }
+
+function alertField(data)
+{
+    swal ("Tambahkan "+data +"kedalam format template")
+}
+
+function saveTemplate(id)
+{
+
+    var data = tinyMCE.editors[$('#artikel').attr('id')].getContent({format: 'html'})
+//    Save HTML Template
+    $.post('../../php/tambahTemplate.php', {data:data,id:id}, function(response){
+        // console.log(response);
+        swal(response) .then((value) => {
+            location.reload();
+    });;
+        $('#tambahPangkat').modal('hide');
+    });
+}

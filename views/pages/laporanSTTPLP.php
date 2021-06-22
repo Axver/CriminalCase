@@ -266,7 +266,7 @@ include "../../php/connect.php";
                                                     </a>
                                                 </td>
                                                 <td>
-                                                    <a class="nav-link" href="index.php">
+                                                    <a onclick="deleteJenisLaporan('<?php echo $d["id_jenis"]; ?>')" class="nav-link" href="#">
                                                         <span class="iconify" data-icon="mdi:printer-outline" data-inline="false"></span>
                                                         <span>Delete</span>
 

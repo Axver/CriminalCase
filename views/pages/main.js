@@ -224,3 +224,29 @@ function saveTemplate(id)
         $('#tambahPangkat').modal('hide');
     });
 }
+
+function deleteJenisLaporan(id)
+{
+
+    swal({
+        title: "Are you sure?",
+        text: "Semua data terkait jenis laporan ini akan dihapus!",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+    })
+        .then((willDelete) => {
+        if (willDelete) {
+            $.post('../../php/deleteJenisLaporan.php', {id:id}, function(response){
+                // console.log(response);
+                swal(response) .then((value) => {
+                    location.reload();
+            });;
+
+            });
+        } else {
+            swal("Data batal dihapus!");
+}
+});
+
+}

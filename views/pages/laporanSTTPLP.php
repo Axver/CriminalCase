@@ -5,6 +5,7 @@
 include "../header.php";
 include "laporanModal.php";
 include "../../php/connect.php";
+include "session.php";
 ?>
 <body>
 <div class="container-scroller">
@@ -171,18 +172,9 @@ include "../../php/connect.php";
                         <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
                             <h6 class="p-3 mb-0">Profile</h6>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item preview-item">
-                                <div class="preview-thumbnail">
-                                    <div class="preview-icon bg-dark rounded-circle">
-                                        <i class="mdi mdi-settings text-success"></i>
-                                    </div>
-                                </div>
-                                <div class="preview-item-content">
-                                    <p class="preview-subject mb-1">Settings</p>
-                                </div>
-                            </a>
+
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item preview-item">
+                            <a href="../../php/logout.php" class="dropdown-item preview-item">
                                 <div class="preview-thumbnail">
                                     <div class="preview-icon bg-dark rounded-circle">
                                         <i class="mdi mdi-logout text-danger"></i>
@@ -192,8 +184,7 @@ include "../../php/connect.php";
                                     <p class="preview-subject mb-1">Log out</p>
                                 </div>
                             </a>
-                            <div class="dropdown-divider"></div>
-                            <p class="p-3 mb-0 text-center">Advanced settings</p>
+
                         </div>
                     </li>
                 </ul>

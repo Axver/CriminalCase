@@ -3,6 +3,7 @@
 <!--Header Disini-->
 <?php
 include "../header.php";
+include "../../php/connect.php";
 ?>
 <body>
 <div class="container-scroller">
@@ -214,79 +215,57 @@ include "../header.php";
                     <div class="col-12 grid-margin">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Laporan Polisi</h4>
+                                <h4 class="card-title">Tambah Laporan Polisi</h4>
+                                <b>Pilih Jenis Laporan</b>
+                                <select id="id_jenis" class="form-control">
+                                    <option value="">--Pilih Laporan--</option>
+                                    <?php
 
-                                <button class="btn btn-info" onclick="tambahLaporan()">Tambah Laporan</button>
-                                <div class="table-responsive">
-                                    <table id="TAcrim" class="table table-striped table-bordered" style="width:100%">
-                                        <thead>
-                                        <tr>
-                                            <th>No</th>
-                                            <th>Nomor Laporan</th>
-                                            <th>Jenis Kejadian</th>
-                                            <th>Pelapor</th>
-                                            <th>Petugas</th>
-                                            <th>Detail</th>
-                                            <th>Print</th>
-                                            <th>Edit/Delete</th>
-
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>System Architect</td>
-                                            <td>Edinburgh</td>
-                                            <td>61</td>
-                                            <td>2011/04/25</td>
-                                            <td>
-                                                <a class="nav-link" href="index.php">
-                                                    <span class="iconify" data-icon="mdi:information" data-inline="false"></span>
-                                                    <span>Info</span>
-
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a class="nav-link" href="index.php">
-                                                    <span class="iconify" data-icon="mdi:printer-outline" data-inline="false"></span>
-                                                    <span>Print</span>
-
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a class="nav-link" href="index.php">
-                                                    <span class="iconify" data-icon="mdi:clipboard-edit-outline" data-inline="false"></span>
-                                                    <span>Edit</span>
-
-                                                </a>
-
-                                                <a class="nav-link" href="index.php">
-                                                    <span class="iconify" data-icon="mdi:delete" data-inline="false"></span>
-                                                    <span>Delete</span>
-
-                                                </a>
-                                            </td>
-
-                                        </tr>
+                                    $sql = "SELECT * FROM jenis_laporan";
+                                    $data=mysqli_query($conn,$sql);
 
 
-                                        </tbody>
-                                        <tfoot>
-                                        <tr>
-                                            <th>No</th>
-                                            <th>Nomor Laporan</th>
-                                            <th>Jenis Kejadian</th>
-                                            <th>Pelapor</th>
-                                            <th>Petugas</th>
-                                            <th>Detail</th>
-                                            <th>Print</th>
-                                            <th>Edit/Delete</th>
+                                    while($d = mysqli_fetch_array($data)){
+                                        ?>
 
-                                        </tr>
-                                        </tfoot>
-                                    </table>
-                                </div>
+                                     <option value="<?php echo $d['id_jenis'] ?>"><?php echo $d['nama_laporan'] ?></option>
+
+                                        <?php
+                                    }
+                                    ?>
+                                </select>
+
+                                <br/>
+
+                                <button onclick="generateField()" class="btn btn-danger">Generate Field</button>
                             </div>
+
+                            <div class="card-body">
+                                <h4 class="card-title">Isi Field</h4>
+                                <div id="generateFiield">
+                                </div>
+
+
+                                <br/>
+
+                                <button id="fieldSimpan" onclick="generateField()" class="btn btn-success">Simpan Laporan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row ">
+                    <div class="col-12 grid-margin">
+                        <div class="card">
+                            <div id="templateMaker" class="card-body">
+
+
+
+
+                            </div>
+
+
                         </div>
                     </div>
                 </div>

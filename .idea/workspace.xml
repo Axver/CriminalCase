@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5499df52-1cfd-400f-84a3-c33eda3624df" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/deleteField.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/getField.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/templateField.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/pages/tambahLaporan.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/pages/laporanSTTPLP.php" afterPath="$PROJECT_DIR$/views/pages/laporanSTTPLP.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/pages/laporanPolisi.php" afterPath="$PROJECT_DIR$/views/pages/laporanPolisi.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/pages/main.js" afterPath="$PROJECT_DIR$/views/pages/main.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,152 +32,77 @@
     <favorites_list name="tekri" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="laporanSTTPLP.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/views/pages/laporanSTTPLP.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="88">
-                  <caret line="268" column="116" lean-forward="false" selection-start-line="268" selection-start-column="116" selection-end-line="268" selection-end-column="116" />
-                  <folding>
-                    <marker date="1624422393014" expanded="true" signature="13870:13897" ph="SELECT * FRO... jenis_laporan" />
-                    <marker date="1624422393014" expanded="true" signature="17775:17799" ph="SELECT * FRO... field_code" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/views/pages/main.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="130">
-                  <caret line="239" column="44" lean-forward="true" selection-start-line="239" selection-start-column="44" selection-end-line="239" selection-end-column="44" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="deleteField.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php/deleteField.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="154">
-                  <caret line="7" column="74" lean-forward="false" selection-start-line="7" selection-start-column="74" selection-end-line="7" selection-end-column="74" />
-                  <folding>
-                    <marker date="1624422445591" expanded="true" signature="89:132" ph="DELETE FROM " />
-                    <marker date="1624422445591" expanded="true" signature="89:156" ph="DELETE FROM " />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="deleteAkun.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php/deleteAkun.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="264">
-                  <caret line="12" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="1" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="deleteJenisLaporan.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php/deleteJenisLaporan.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="220">
-                  <caret line="10" column="50" lean-forward="false" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
-                  <folding>
-                    <marker date="1624338546613" expanded="true" signature="65:108" ph="DELETE FROM " />
-                    <marker date="1624338546613" expanded="true" signature="65:113" ph="DELETE FROM " />
-                    <marker date="1624338546613" expanded="true" signature="150:193" ph="DELETE FROM " />
-                    <marker date="1624338546613" expanded="true" signature="230:270" ph="DELETE FROM " />
-                    <marker date="1624338546613" expanded="true" signature="307:353" ph="DELETE FROM " />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="deletePangkat.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php/deletePangkat.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="264">
-                  <caret line="12" column="1" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="1" />
-                  <folding>
-                    <marker date="1624265146971" expanded="true" signature="72:109" ph="DELETE FROM " />
-                    <marker date="1624265146971" expanded="true" signature="72:110" ph="DELETE FROM " />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="tambahTemplate.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php/tambahTemplate.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="242">
-                  <caret line="11" column="43" lean-forward="false" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-                  <folding>
-                    <marker date="1624335858272" expanded="true" signature="88:129" ph="UPDATE jenis... " />
-                    <marker date="1624335858272" expanded="true" signature="88:150" ph="UPDATE jenis... " />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="laporanModal.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/views/pages/laporanModal.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="352">
-                  <caret line="16" column="87" lean-forward="false" selection-start-line="16" selection-start-column="87" selection-end-line="16" selection-end-column="87" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="tambahPangkat.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php/tambahPangkat.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="308">
-                  <caret line="14" column="1" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="1" />
-                  <folding>
-                    <marker date="1624261873082" expanded="true" signature="104:183" ph="INSERT INTO pangkat... " />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="template.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/views/pages/template.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="5984">
-                  <caret line="272" column="59" lean-forward="false" selection-start-line="272" selection-start-column="59" selection-end-line="272" selection-end-column="59" />
-                  <folding>
-                    <marker date="1624336089835" expanded="true" signature="13215:13260" ph="SELECT * FRO... field_code" />
-                    <marker date="1624336089835" expanded="true" signature="14770:14818" ph="SELECT * FRO... jenis_laporan" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="laporanSTTPLP.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/views/pages/laporanSTTPLP.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="440">
-                  <caret line="341" column="131" lean-forward="false" selection-start-line="341" selection-start-column="131" selection-end-line="341" selection-end-column="131" />
-                  <folding>
-                    <marker date="1624422393014" expanded="true" signature="13870:13897" ph="SELECT * FRO... jenis_laporan" />
-                    <marker date="1624422393014" expanded="true" signature="17775:17799" ph="SELECT * FRO... field_code" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/pages/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="309" column="29" lean-forward="false" selection-start-line="309" selection-start-column="29" selection-end-line="309" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="templateField.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/templateField.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+              <folding>
+                <marker date="1624424227989" expanded="true" signature="64:112" ph="SELECT * FRO... jenis_laporan" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editAkun.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/editAkun.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="28" selection-end-column="25" />
+              <folding>
+                <marker date="1624276401565" expanded="true" signature="67:111" ph="SELECT * FRO... users" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tambahLaporan.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/pages/tambahLaporan.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="260" column="37" lean-forward="true" selection-start-line="260" selection-start-column="37" selection-end-line="260" selection-end-column="50" />
+              <folding>
+                <marker date="1624424171096" expanded="true" signature="13215:13242" ph="SELECT * FRO... jenis_laporan" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="laporanPolisi.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/pages/laporanPolisi.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="472">
+              <caret line="224" column="31" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="300" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manageAccount.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/pages/manageAccount.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="748">
+              <caret line="357" column="42" lean-forward="true" selection-start-line="320" selection-start-column="38" selection-end-line="357" selection-end-column="42" />
+              <folding>
+                <marker date="1624276574954" expanded="true" signature="13847:13868" ph="SELECT * FRO... pangkat" />
+                <marker date="1624276574954" expanded="true" signature="17576:17652" ph="SELECT * FRO... user" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -204,6 +131,7 @@
       <find>field co</find>
       <find>add t</find>
       <find>delete</find>
+      <find>simp</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -220,7 +148,6 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/views/pages/index.php" />
-        <option value="$PROJECT_DIR$/views/pages/laporanPolisi.php" />
         <option value="$PROJECT_DIR$/views/pages/tentangAplikasi.php" />
         <option value="$PROJECT_DIR$/views/pages/laporanPolisiModal.php" />
         <option value="$PROJECT_DIR$/php/tambahPangkat.php" />
@@ -245,8 +172,12 @@
         <option value="$PROJECT_DIR$/views/pages/template.php" />
         <option value="$PROJECT_DIR$/php/deleteJenisLaporan.php" />
         <option value="$PROJECT_DIR$/views/pages/laporanSTTPLP.php" />
-        <option value="$PROJECT_DIR$/views/pages/main.js" />
         <option value="$PROJECT_DIR$/php/deleteField.php" />
+        <option value="$PROJECT_DIR$/views/pages/laporanPolisi.php" />
+        <option value="$PROJECT_DIR$/php/getField.php" />
+        <option value="$PROJECT_DIR$/views/pages/tambahLaporan.php" />
+        <option value="$PROJECT_DIR$/php/templateField.php" />
+        <option value="$PROJECT_DIR$/views/pages/main.js" />
       </list>
     </option>
   </component>
@@ -770,12 +701,12 @@
       <workItem from="1624352708566" duration="117000" />
       <workItem from="1624352852011" duration="217000" />
       <workItem from="1624353095892" duration="46000" />
-      <workItem from="1624422042738" duration="443000" />
+      <workItem from="1624422042738" duration="2221000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26110000" />
+    <option name="totallyTimeSpent" value="27888000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -837,34 +768,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/pages/manageAccount.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7876">
-          <caret line="358" column="0" lean-forward="false" selection-start-line="320" selection-start-column="38" selection-end-line="358" selection-end-column="0" />
-          <folding>
-            <marker date="1624276574954" expanded="true" signature="13847:13868" ph="SELECT * FRO... pangkat" />
-            <marker date="1624276574954" expanded="true" signature="17576:17652" ph="SELECT * FRO... user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/tambahJenisLaporan.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/tambahPangkat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="1" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <marker date="1624261873082" expanded="true" signature="104:183" ph="INSERT INTO pangkat... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/pages/laporanModal.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1012">
@@ -1046,13 +949,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/editAkun.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/editPangkat.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -1109,13 +1005,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/pages/laporanPolisi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="216" column="72" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="298" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="686">
@@ -1128,17 +1017,6 @@
         <state relative-caret-position="550">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/pages/manageAccount.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7876">
-          <caret line="358" column="0" lean-forward="false" selection-start-line="320" selection-start-column="38" selection-end-line="358" selection-end-column="0" />
-          <folding>
-            <marker date="1624276574954" expanded="true" signature="13847:13868" ph="SELECT * FRO... pangkat" />
-            <marker date="1624276574954" expanded="true" signature="17576:17652" ph="SELECT * FRO... user" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1237,10 +1115,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/pages/manageAccount.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="357" column="42" lean-forward="true" selection-start-line="320" selection-start-column="38" selection-end-line="357" selection-end-column="42" />
+          <folding>
+            <marker date="1624276574954" expanded="true" signature="13847:13868" ph="SELECT * FRO... pangkat" />
+            <marker date="1624276574954" expanded="true" signature="17576:17652" ph="SELECT * FRO... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/pages/laporanPolisi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="224" column="31" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="300" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/editAkun.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="28" selection-end-column="25" />
+          <folding>
+            <marker date="1624276401565" expanded="true" signature="67:111" ph="SELECT * FRO... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/getField.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="26" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="25" />
+          <folding>
+            <marker date="1624423292794" expanded="true" signature="64:109" ph="SELECT * FRO... field_code" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/templateField.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+          <folding>
+            <marker date="1624424227989" expanded="true" signature="64:112" ph="SELECT * FRO... jenis_laporan" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/pages/tambahLaporan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="260" column="37" lean-forward="true" selection-start-line="260" selection-start-column="37" selection-end-line="260" selection-end-column="50" />
+          <folding>
+            <marker date="1624424171096" expanded="true" signature="13215:13242" ph="SELECT * FRO... jenis_laporan" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/pages/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="239" column="44" lean-forward="true" selection-start-line="239" selection-start-column="44" selection-end-line="239" selection-end-column="44" />
+        <state relative-caret-position="500">
+          <caret line="309" column="29" lean-forward="false" selection-start-line="309" selection-start-column="29" selection-end-line="309" selection-end-column="29" />
           <folding />
         </state>
       </provider>

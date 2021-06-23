@@ -4,6 +4,7 @@ $(document).ready(function() {
     $('#TAcrim1').DataTable();
     $('#TAcrimPangkat').DataTable();
     $('#TAcrimAkun').DataTable();
+    $('#fieldSimpan').hide();
 } );
 
 
@@ -262,5 +263,61 @@ function deleteFieldLaporan(id,field) {
     });
 
     });
+
+}
+
+function tambahLaporan() {
+    window.location.href='tambahLaporan.php';
+}
+
+function generateField() {
+    let id=$("#id_jenis").val();
+
+    $.post('../../php/getField.php', {id:id}, function(response){
+        console.log(response);
+        let data=JSON.parse(response);
+        console.log(data);
+
+        let length=data.features.length;
+        let i=0;
+
+        while(i<length)
+        {
+            console.log(data.features[i].properties['field_name']);
+            $("#generateFiield").append('<input id="'+data.features[i].properties['field_name']+'" class="form-control" type="text" name="'+data.features[i].properties['field_name']+'" placeholder="'+data.features[i].properties['field_name']+'"/> <br/>');
+
+            i++;
+        }
+
+        $("#fieldSimpan").show();
+
+
+
+
+    });
+
+    $.post('../../php/templateField.php', {id:id}, function(response){
+        console.log(response);
+        let data=JSON.parse(response);
+        console.log(data);
+
+        let length=data.features.length;
+        let i=0;
+
+        while(i<length)
+        {
+
+            $("#templateMaker").append(data.features[i].properties['template']);
+
+            i++;
+        }
+
+
+
+
+
+
+    });
+
 
 }

@@ -171,7 +171,7 @@ include "session.php";
                         <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
                             <h6 class="p-3 mb-0">Profile</h6>
                             <div class="dropdown-divider"></div>
-                       
+
                             <div class="dropdown-divider"></div>
                             <a href="../../php/logout.php" class="dropdown-item preview-item">
                                 <div class="preview-thumbnail">

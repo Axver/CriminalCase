@@ -244,21 +244,21 @@ include "../../php/connect.php";
                                 <h4 class="card-title">Informasi Laporan</h4>
 
                                 No Laporan
-                                <input class="form form-control" type="text" name="" id="no_laporan"><br/>
+                                <input class="form form-control" type="text" name="" id="no_laporanX"><br/>
                                 Id Jenis
-                                <input class="form form-control" type="text" name="" id="id_jenis" disabled> <br/>
+                                <input style="background-color: yellow; color: black;" class="form form-control" type="text" name="" id="id_jenisX" disabled> <br/>
                                 Tanggal
-                                <input class="form form-control" type="date" name="" id="date"><br/>
+                                <input class="form form-control" type="date" name="" id="dateX"><br/>
                                 No Polisi
-                                <input class="form form-control" type="text" name="" id="nopol"> <br/>
+                                <input class="form form-control" type="text" name="" id="nopolX"> <br/>
                                 NIK
-                                <input class="form form-control" type="text" name="" id="ktp">
+                                <input class="form form-control" type="text" name="" id="ktpX" hidden>
 
 
 
                                 <br/>
 
-                                <button id="fieldSimpan" onclick="simpanLaporan()" class="btn btn-success">Simpan Laporan</button>
+                                <button id="fieldSimpan1" onclick="simpanBaseLaporan()" class="btn btn-success">Simpan Laporan</button>
                             </div>
 
                             <div class="card-body">

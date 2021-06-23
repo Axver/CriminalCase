@@ -5,6 +5,7 @@ $(document).ready(function() {
     $('#TAcrimPangkat').DataTable();
     $('#TAcrimAkun').DataTable();
     $('#fieldSimpan').hide();
+    $('#fieldSimpan1').hide();
 } );
 
 
@@ -271,6 +272,7 @@ function tambahLaporan() {
 }
 
 function generateField() {
+
     const myNode = document.getElementById("generateFiield");
     while (myNode.firstChild) {
         myNode.removeChild(myNode.lastChild);
@@ -285,6 +287,7 @@ function generateField() {
     // $("#templateMaker").remove();
 
     let id=$("#id_jenis").val();
+    $("#id_jenisX").val(id);
 
     $.post('../../php/getField.php', {id:id}, function(response){
         console.log(response);
@@ -303,6 +306,7 @@ function generateField() {
         }
 
         $("#fieldSimpan").show();
+        $("#fieldSimpan1").show();
 
 
 
@@ -325,7 +329,8 @@ function generateField() {
             i++;
         }
 
-
+        $("#fieldSimpan").show();
+        $("#fieldSimpan1").show();
 
 
 
@@ -340,6 +345,46 @@ function simpanLaporan()
 
     let data=$("#generateFiield :input");
     let length=data.length;
-    console.log(data[0].name);
-    console.log(data[0].value);
+    let id_jenis=$("#id_jenisX").val();
+    let no_laporan=$("#no_laporanX").val();
+    let i=0;
+    while(i<length)
+    {
+        $.post('../../php/simpanDataField.php',
+            {name:data[i].name,value:data[i].value,id:id_jenis,no_laporan:no_laporan}, function(response){
+                // console.log(response);
+
+                swal(response)
+                    .then((value) => {
+                    location.reload();
+            });
+
+
+            });
+        i++;
+    }
+    // console.log(data[0].name);
+    // console.log(data[0].value);
+}
+
+function simpanBaseLaporan() {
+    let no_laporan=$("#no_laporanX").val();
+    let id_jenis=$("#id_jenisX").val();
+    let date=$("#dateX").val();
+    let no_polisi=$("#nopolX").val();
+    let ktp=$("#ktpX").val();
+
+    $.post('../../php/tambahBaseLaporan.php',
+        {no_laporan:no_laporan,id_jenis:id_jenis,date:date,no_polisi:no_polisi,ktp:ktp}, function(response){
+        // console.log(response);
+            swal(response);
+
+            $( "#no_laporanX" ).prop( "disabled", true );
+            $( "#id_jenisX" ).prop( "disabled", true );
+            $( "#dateX" ).prop( "disabled", true );
+            $( "#nopolX" ).prop( "disabled", true );
+            $( "#ktpX" ).prop( "disabled", true );
+
+
+    });
 }

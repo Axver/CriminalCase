@@ -339,7 +339,7 @@ include "../../php/connect.php";
                                                 <td>
 
 
-                                                    <a class="nav-link" href="index.php">
+                                                    <a onclick="deleteFieldLaporan('<?php echo $d["id_jenis"]; ?>','<?php echo $d["field_name"]; ?>')" class="nav-link" href="">
                                                         <span class="iconify" data-icon="mdi:delete" data-inline="false"></span>
                                                         <span>Delete</span>
 

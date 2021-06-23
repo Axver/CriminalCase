@@ -250,3 +250,17 @@ function deleteJenisLaporan(id)
 });
 
 }
+
+
+function deleteFieldLaporan(id,field) {
+
+    $.post('../../php/deleteField.php', {id:id,field:field}, function(response){
+        // console.log(response);
+        swal(response)
+            .then((value) => {
+            location.reload();
+    });
+
+    });
+
+}

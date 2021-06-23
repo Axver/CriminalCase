@@ -271,6 +271,19 @@ function tambahLaporan() {
 }
 
 function generateField() {
+    const myNode = document.getElementById("generateFiield");
+    while (myNode.firstChild) {
+        myNode.removeChild(myNode.lastChild);
+    }
+
+    const myNode1 = document.getElementById("templateMaker");
+    while (myNode1.firstChild) {
+        myNode1.removeChild(myNode1.lastChild);
+    }
+
+    // $("#generateFiield").remove();
+    // $("#templateMaker").remove();
+
     let id=$("#id_jenis").val();
 
     $.post('../../php/getField.php', {id:id}, function(response){
@@ -320,4 +333,13 @@ function generateField() {
     });
 
 
+}
+
+function simpanLaporan()
+{
+
+    let data=$("#generateFiield :input");
+    let length=data.length;
+    console.log(data[0].name);
+    console.log(data[0].value);
 }

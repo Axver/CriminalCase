@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5499df52-1cfd-400f-84a3-c33eda3624df" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/getField.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/templateField.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/pages/tambahLaporan.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/pages/laporanPolisi.php" afterPath="$PROJECT_DIR$/views/pages/laporanPolisi.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/pages/main.js" afterPath="$PROJECT_DIR$/views/pages/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/pages/tambahLaporan.php" afterPath="$PROJECT_DIR$/views/pages/tambahLaporan.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,8 +32,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/pages/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="309" column="29" lean-forward="false" selection-start-line="309" selection-start-column="29" selection-end-line="309" selection-end-column="29" />
+            <state relative-caret-position="636">
+              <caret line="341" column="27" lean-forward="false" selection-start-line="341" selection-start-column="27" selection-end-line="341" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -70,10 +66,10 @@
       <file leaf-file-name="tambahLaporan.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/pages/tambahLaporan.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="260" column="37" lean-forward="true" selection-start-line="260" selection-start-column="37" selection-end-line="260" selection-end-column="50" />
+            <state relative-caret-position="428">
+              <caret line="244" column="41" lean-forward="true" selection-start-line="244" selection-start-column="41" selection-end-line="244" selection-end-column="55" />
               <folding>
-                <marker date="1624424171096" expanded="true" signature="13215:13242" ph="SELECT * FRO... jenis_laporan" />
+                <marker date="1624424358628" expanded="true" signature="13215:13242" ph="SELECT * FRO... jenis_laporan" />
               </folding>
             </state>
           </provider>
@@ -175,8 +171,8 @@
         <option value="$PROJECT_DIR$/php/deleteField.php" />
         <option value="$PROJECT_DIR$/views/pages/laporanPolisi.php" />
         <option value="$PROJECT_DIR$/php/getField.php" />
-        <option value="$PROJECT_DIR$/views/pages/tambahLaporan.php" />
         <option value="$PROJECT_DIR$/php/templateField.php" />
+        <option value="$PROJECT_DIR$/views/pages/tambahLaporan.php" />
         <option value="$PROJECT_DIR$/views/pages/main.js" />
       </list>
     </option>
@@ -701,12 +697,12 @@
       <workItem from="1624352708566" duration="117000" />
       <workItem from="1624352852011" duration="217000" />
       <workItem from="1624353095892" duration="46000" />
-      <workItem from="1624422042738" duration="2221000" />
+      <workItem from="1624422042738" duration="2831000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27888000" />
+    <option name="totallyTimeSpent" value="28498000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1166,18 +1162,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/pages/tambahLaporan.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="260" column="37" lean-forward="true" selection-start-line="260" selection-start-column="37" selection-end-line="260" selection-end-column="50" />
+        <state relative-caret-position="428">
+          <caret line="244" column="41" lean-forward="true" selection-start-line="244" selection-start-column="41" selection-end-line="244" selection-end-column="55" />
           <folding>
-            <marker date="1624424171096" expanded="true" signature="13215:13242" ph="SELECT * FRO... jenis_laporan" />
+            <marker date="1624424358628" expanded="true" signature="13215:13242" ph="SELECT * FRO... jenis_laporan" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/pages/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="309" column="29" lean-forward="false" selection-start-line="309" selection-start-column="29" selection-end-line="309" selection-end-column="29" />
+        <state relative-caret-position="636">
+          <caret line="341" column="27" lean-forward="false" selection-start-line="341" selection-start-column="27" selection-end-line="341" selection-end-column="27" />
           <folding />
         </state>
       </provider>

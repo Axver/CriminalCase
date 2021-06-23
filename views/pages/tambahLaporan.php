@@ -248,7 +248,7 @@ include "../../php/connect.php";
 
                                 <br/>
 
-                                <button id="fieldSimpan" onclick="generateField()" class="btn btn-success">Simpan Laporan</button>
+                                <button id="fieldSimpan" onclick="simpanLaporan()" class="btn btn-success">Simpan Laporan</button>
                             </div>
                         </div>
                     </div>

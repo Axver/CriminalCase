@@ -241,6 +241,27 @@ include "../../php/connect.php";
                             </div>
 
                             <div class="card-body">
+                                <h4 class="card-title">Informasi Laporan</h4>
+
+                                No Laporan
+                                <input class="form form-control" type="text" name="" id="no_laporan"><br/>
+                                Id Jenis
+                                <input class="form form-control" type="text" name="" id="id_jenis" disabled> <br/>
+                                Tanggal
+                                <input class="form form-control" type="date" name="" id="date"><br/>
+                                No Polisi
+                                <input class="form form-control" type="text" name="" id="nopol"> <br/>
+                                NIK
+                                <input class="form form-control" type="text" name="" id="ktp">
+
+
+
+                                <br/>
+
+                                <button id="fieldSimpan" onclick="simpanLaporan()" class="btn btn-success">Simpan Laporan</button>
+                            </div>
+
+                            <div class="card-body">
                                 <h4 class="card-title">Isi Field</h4>
                                 <div id="generateFiield">
                                 </div>
@@ -248,7 +269,7 @@ include "../../php/connect.php";
 
                                 <br/>
 
-                                <button id="fieldSimpan" onclick="simpanLaporan()" class="btn btn-success">Simpan Laporan</button>
+                                <button id="fieldSimpan" onclick="simpanLaporan()" class="btn btn-success">Simpan Field</button>
                             </div>
                         </div>
                     </div>

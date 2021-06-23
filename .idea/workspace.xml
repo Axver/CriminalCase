@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5499df52-1cfd-400f-84a3-c33eda3624df" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/pages/main.js" afterPath="$PROJECT_DIR$/views/pages/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/pages/tambahLaporan.php" afterPath="$PROJECT_DIR$/views/pages/tambahLaporan.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,10 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/pages/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="636">
+            <state relative-caret-position="654">
               <caret line="341" column="27" lean-forward="false" selection-start-line="341" selection-start-column="27" selection-end-line="341" selection-end-column="27" />
               <folding />
             </state>
@@ -63,13 +62,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tambahLaporan.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="tambahLaporan.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/pages/tambahLaporan.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="244" column="41" lean-forward="true" selection-start-line="244" selection-start-column="41" selection-end-line="244" selection-end-column="55" />
+            <state relative-caret-position="560">
+              <caret line="271" column="119" lean-forward="false" selection-start-line="271" selection-start-column="119" selection-end-line="271" selection-end-column="119" />
               <folding>
-                <marker date="1624424358628" expanded="true" signature="13215:13242" ph="SELECT * FRO... jenis_laporan" />
+                <marker date="1624426457053" expanded="true" signature="13215:13242" ph="SELECT * FRO... jenis_laporan" />
               </folding>
             </state>
           </provider>
@@ -126,8 +125,8 @@
       <find>save</find>
       <find>field co</find>
       <find>add t</find>
-      <find>delete</find>
       <find>simp</find>
+      <find>delete</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -172,8 +171,8 @@
         <option value="$PROJECT_DIR$/views/pages/laporanPolisi.php" />
         <option value="$PROJECT_DIR$/php/getField.php" />
         <option value="$PROJECT_DIR$/php/templateField.php" />
-        <option value="$PROJECT_DIR$/views/pages/tambahLaporan.php" />
         <option value="$PROJECT_DIR$/views/pages/main.js" />
+        <option value="$PROJECT_DIR$/views/pages/tambahLaporan.php" />
       </list>
     </option>
   </component>
@@ -697,12 +696,12 @@
       <workItem from="1624352708566" duration="117000" />
       <workItem from="1624352852011" duration="217000" />
       <workItem from="1624353095892" duration="46000" />
-      <workItem from="1624422042738" duration="2831000" />
+      <workItem from="1624422042738" duration="3627000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28498000" />
+    <option name="totallyTimeSpent" value="29294000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1160,21 +1159,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/pages/tambahLaporan.php">
+    <entry file="file://$PROJECT_DIR$/views/pages/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="244" column="41" lean-forward="true" selection-start-line="244" selection-start-column="41" selection-end-line="244" selection-end-column="55" />
-          <folding>
-            <marker date="1624424358628" expanded="true" signature="13215:13242" ph="SELECT * FRO... jenis_laporan" />
-          </folding>
+        <state relative-caret-position="654">
+          <caret line="341" column="27" lean-forward="false" selection-start-line="341" selection-start-column="27" selection-end-line="341" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/pages/main.js">
+    <entry file="file://$PROJECT_DIR$/views/pages/tambahLaporan.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="341" column="27" lean-forward="false" selection-start-line="341" selection-start-column="27" selection-end-line="341" selection-end-column="27" />
-          <folding />
+        <state relative-caret-position="560">
+          <caret line="271" column="119" lean-forward="false" selection-start-line="271" selection-start-column="119" selection-end-line="271" selection-end-column="119" />
+          <folding>
+            <marker date="1624426457053" expanded="true" signature="13215:13242" ph="SELECT * FRO... jenis_laporan" />
+          </folding>
         </state>
       </provider>
     </entry>

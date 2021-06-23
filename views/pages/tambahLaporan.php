@@ -4,6 +4,7 @@
 <?php
 include "../header.php";
 include "../../php/connect.php";
+include "session.php";
 ?>
 <body>
 <div class="container-scroller">
@@ -241,6 +242,22 @@ include "../../php/connect.php";
                             </div>
 
                             <div class="card-body">
+                                <?php
+
+                                $ssn= $_SESSION['username'];
+                                ?>
+
+                                <?php
+
+                                $sql = "SELECT * FROM users WHERE username='$ssn'";
+                                $data=mysqli_query($conn,$sql);
+
+
+                                while($d = mysqli_fetch_array($data)){
+                                   $dx=$d['no_polisi'];
+                                }
+                                ?>
+
                                 <h4 class="card-title">Informasi Laporan</h4>
 
                                 No Laporan
@@ -250,7 +267,7 @@ include "../../php/connect.php";
                                 Tanggal
                                 <input class="form form-control" type="date" name="" id="dateX"><br/>
                                 No Polisi
-                                <input class="form form-control" type="text" name="" id="nopolX"> <br/>
+                                <input style="background-color: yellow; color: black;" class="form form-control" type="text" name="" id="nopolX" value="<?php echo $dx; ?>" disabled> <br/>
                                 NIK
                                 <input class="form form-control" type="text" name="" id="ktpX" hidden>
 

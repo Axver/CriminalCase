@@ -219,6 +219,7 @@ include "../../php/connect.php";
                                             <th>No</th>
                                             <th>Nomor Laporan</th>
                                             <th>Petugas</th>
+                                            <th>Tanggal</th>
                                             <th>Detail</th>
                                             <th>Print</th>
                                             <th>Delete</th>
@@ -240,8 +241,9 @@ include "../../php/connect.php";
                                                 <td><?php echo $d['no_laporan'] ?></td>
                                                 <td><?php echo $d['nama_laporan'] ?></td>
                                                 <td><?php echo $d['nama'] ?></td>
+                                                <td><?php echo $d['tgl_bulan_thn'] ?></td>
                                                 <td>
-                                                    <a class="nav-link" href="index.php">
+                                                    <a class="nav-link" href="viewLaporan.php?id=<?php echo $d['no_laporan'] ?>">
                                                         <span class="iconify" data-icon="mdi:information" data-inline="false"></span>
                                                         <span>Info</span>
 
@@ -275,6 +277,7 @@ include "../../php/connect.php";
                                             <th>No</th>
                                             <th>Nomor Laporan</th>
                                             <th>Petugas</th>
+                                            <th>Tanggal</th>
                                             <th>Detail</th>
                                             <th>Print</th>
                                             <th>Delete</th>

@@ -388,3 +388,8 @@ function simpanBaseLaporan() {
 
     });
 }
+
+function loadReplace()
+{
+    // alert("test");
+}

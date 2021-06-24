@@ -20,7 +20,7 @@ include "../../php/connect.php";
         border: none;
     }
 </style>
-<body>
+<body onload="loadReplace()">
 <div class="container-scroller">
 
     <!--Navigasi Disini-->
@@ -216,40 +216,34 @@ include "../../php/connect.php";
                 </div>
 
 
-                <div class="row ">
+                <div class="row " >
                     <div class="col-12 grid-margin">
                         <div class="card">
                             <div class="card-body">
+
+                                <div style="text-align: center" id="tengahKan">
+                                    <div class="row">
+                                        <div class="col-sm-4"><strong>KEPOLISIAN DAERAH SUMATERA BARAT</strong></div>
+                                        <div class="col-sm-4"></div>
+                                        <div class="col-sm-4"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-4"><strong>RESORT KOTA PADANG</strong><br/><strong>SEKTOR PAUH</strong><br/>Jalan.Dr.Moh.Hatta No 1 Padang</div>
+                                        <div class="col-sm-4"><div class="row"><div class="col-sm-4"></div><div class="col-sm-4"> <img  class="img-fluid" src="../../assets/images/polri_logo.png"/></div><div class="col-sm-4"></div></div></div>
+                                        <div class="col-sm-4"><strong>MODEL B</strong></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-4"></div>
+                                        <div class="col-sm-4"><strong>LAPORAN POLISI</strong> <br/> <strong>TENTANG KEJAHATAN YANG DILAPORKAN</strong></div>
+                                        <div class="col-sm-4"></div>
+                                    </div>
+
+
+                                </div>
+
+
 <!--                              Start Pelaporan-->
 
-                                <table border="1" style="border-collapse: collapse; width: 0%; height: 238px;">
-                                    <tbody>
-                                    <tr style="height: 40px;">
-                                        <td style="width: 33.3333%; text-align: center; height: 40px;"><strong>KEPOLISIAN DAERAH SUMATERA BARAT</strong></td>
-                                        <td style="width: 33.3333%; height: 40px;"></td>
-                                        <td style="width: 33.3333%; height: 40px;"></td>
-                                    </tr>
-                                    <tr style="height: 20px;">
-                                        <td style="width: 33.3333%; text-align: center; height: 20px;"><strong>RESORT KOTA PADANG</strong></td>
-                                        <td style="width: 33.3333%; height: 20px;" rowspan="2"><img src="../../assets/images/polri_logo.png" alt="" width="174" height="116" style="display: block; margin-left: auto; margin-right: auto;" /></td>
-                                        <td style="width: 33.3333%; height: 20px; text-align: right;"><strong>MODEL B</strong></td>
-                                    </tr>
-                                    <tr style="height: 20px;">
-                                        <td style="width: 33.3333%; text-align: center; height: 20px;"><strong>SEKTOR PAUH</strong></td>
-                                        <td style="width: 33.3333%; height: 20px;"></td>
-                                    </tr>
-                                    <tr style="height: 20px;">
-                                        <td style="width: 33.3333%; text-align: center; height: 20px;">Jalan. Dr.Moh.Hatta No.1 Padang</td>
-                                        <td style="width: 33.3333%; height: 20px; text-align: center;"><strong>LAPORAN POLISI</strong></td>
-                                        <td style="width: 33.3333%; height: 20px;"></td>
-                                    </tr>
-                                    <tr style="height: 20px;">
-                                        <td style="width: 33.3333%; height: 20px;"></td>
-                                        <td style="width: 33.3333%; height: 20px; text-align: center;"><strong>TENTANG KEJATAHATAN YANG DILAPORKAN</strong></td>
-                                        <td style="width: 33.3333%; height: 20px;"></td>
-                                    </tr>
-                                    </tbody>
-                                </table>
 
                                 <?php
 

@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5499df52-1cfd-400f-84a3-c33eda3624df" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/pages/printPDF.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/pages/laporanPolisi.php" afterPath="$PROJECT_DIR$/views/pages/laporanPolisi.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/pages/printPDF.php" afterPath="$PROJECT_DIR$/views/pages/printPDF.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -92,12 +90,13 @@
       <file leaf-file-name="printPDF.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/pages/printPDF.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="230" column="62" lean-forward="false" selection-start-line="230" selection-start-column="62" selection-end-line="230" selection-end-column="62" />
+            <state relative-caret-position="336">
+              <caret line="288" column="46" lean-forward="false" selection-start-line="288" selection-start-column="46" selection-end-line="288" selection-end-column="46" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1624519981589" expanded="true" signature="16616:16783" ph="SELECT * FRO... laporan" />
+                <element signature="e#17862#17869#0#HTML" expanded="true" />
+                <marker date="1624520282734" expanded="true" signature="16616:16783" ph="SELECT * FRO... laporan" />
               </folding>
             </state>
           </provider>
@@ -751,12 +750,12 @@
       <workItem from="1624352852011" duration="217000" />
       <workItem from="1624353095892" duration="46000" />
       <workItem from="1624422042738" duration="10177000" />
-      <workItem from="1624511133764" duration="6599000" />
+      <workItem from="1624511133764" duration="6898000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42443000" />
+    <option name="totallyTimeSpent" value="42742000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1248,12 +1247,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/pages/printPDF.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="230" column="62" lean-forward="false" selection-start-line="230" selection-start-column="62" selection-end-line="230" selection-end-column="62" />
+        <state relative-caret-position="336">
+          <caret line="288" column="46" lean-forward="false" selection-start-line="288" selection-start-column="46" selection-end-line="288" selection-end-column="46" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1624519981589" expanded="true" signature="16616:16783" ph="SELECT * FRO... laporan" />
+            <element signature="e#17862#17869#0#HTML" expanded="true" />
+            <marker date="1624520282734" expanded="true" signature="16616:16783" ph="SELECT * FRO... laporan" />
           </folding>
         </state>
       </provider>

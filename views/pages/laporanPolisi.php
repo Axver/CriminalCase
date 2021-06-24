@@ -4,6 +4,7 @@
 <?php
 include "../header.php";
 include "session.php";
+include "../../php/connect.php";
 
 ?>
 <body>
@@ -208,6 +209,8 @@ include "session.php";
                             <div class="card-body">
                                 <h4 class="card-title">Laporan Polisi</h4>
 
+
+
                                 <button class="btn btn-info" onclick="tambahLaporan()">Tambah Laporan</button>
                                 <div class="table-responsive">
                                     <table id="TAcrim" class="table table-striped table-bordered" style="width:100%">
@@ -215,64 +218,66 @@ include "session.php";
                                         <tr>
                                             <th>No</th>
                                             <th>Nomor Laporan</th>
-                                            <th>Jenis Kejadian</th>
-                                            <th>Pelapor</th>
                                             <th>Petugas</th>
                                             <th>Detail</th>
                                             <th>Print</th>
-                                            <th>Edit/Delete</th>
+                                            <th>Delete</th>
 
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>System Architect</td>
-                                            <td>Edinburgh</td>
-                                            <td>61</td>
-                                            <td>2011/04/25</td>
-                                            <td>
-                                                <a class="nav-link" href="index.php">
-                                                    <span class="iconify" data-icon="mdi:information" data-inline="false"></span>
-                                                    <span>Info</span>
 
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a class="nav-link" href="index.php">
-                                                    <span class="iconify" data-icon="mdi:printer-outline" data-inline="false"></span>
-                                                    <span>Print</span>
+                                        <?php
 
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a class="nav-link" href="index.php">
-                                                    <span class="iconify" data-icon="mdi:clipboard-edit-outline" data-inline="false"></span>
-                                                    <span>Edit</span>
+                                        $sql = "SELECT * FROM laporan LEFT JOIN users ON laporan.no_polisi=users.no_polisi LEFT JOIN jenis_laporan ON laporan.id_jenis=jenis_laporan.id_jenis";
+                                        $data=mysqli_query($conn,$sql);
 
-                                                </a>
 
-                                                <a class="nav-link" href="index.php">
-                                                    <span class="iconify" data-icon="mdi:delete" data-inline="false"></span>
-                                                    <span>Delete</span>
+                                        while($d = mysqli_fetch_array($data)){
+                                            ?>
 
-                                                </a>
-                                            </td>
+                                            <tr>
+                                                <td><?php echo $d['no_laporan'] ?></td>
+                                                <td><?php echo $d['nama_laporan'] ?></td>
+                                                <td><?php echo $d['nama'] ?></td>
+                                                <td>
+                                                    <a class="nav-link" href="index.php">
+                                                        <span class="iconify" data-icon="mdi:information" data-inline="false"></span>
+                                                        <span>Info</span>
 
-                                        </tr>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a class="nav-link" href="index.php">
+                                                        <span class="iconify" data-icon="mdi:printer-outline" data-inline="false"></span>
+                                                        <span>Print</span>
 
+                                                    </a>
+                                                </td>
+                                                <td>
+
+
+                                                    <a class="nav-link" href="index.php">
+                                                        <span class="iconify" data-icon="mdi:delete" data-inline="false"></span>
+                                                        <span>Delete</span>
+
+                                                    </a>
+                                                </td>
+
+                                            </tr>
+                                            <?php
+                                        }
+                                        ?>
 
                                         </tbody>
                                         <tfoot>
                                         <tr>
                                             <th>No</th>
                                             <th>Nomor Laporan</th>
-                                            <th>Jenis Kejadian</th>
-                                            <th>Pelapor</th>
                                             <th>Petugas</th>
                                             <th>Detail</th>
                                             <th>Print</th>
-                                            <th>Edit/Delete</th>
+                                            <th>Delete</th>
 
                                         </tr>
                                         </tfoot>

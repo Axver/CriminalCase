@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5499df52-1cfd-400f-84a3-c33eda3624df" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/navigation.php" afterPath="$PROJECT_DIR$/views/navigation.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/pages/index.php" afterPath="$PROJECT_DIR$/views/pages/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/pages/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="331" column="0" lean-forward="false" selection-start-line="331" selection-start-column="0" selection-end-line="331" selection-end-column="0" />
+            <state relative-caret-position="446">
+              <caret line="237" column="24" lean-forward="false" selection-start-line="237" selection-start-column="24" selection-end-line="237" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -126,11 +125,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navigation.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="navigation.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/navigation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="95" lean-forward="false" selection-start-line="2" selection-start-column="95" selection-end-line="2" selection-end-column="95" />
+            <state relative-caret-position="273">
+              <caret line="18" column="92" lean-forward="false" selection-start-line="18" selection-start-column="91" selection-end-line="18" selection-end-column="92" />
               <folding />
             </state>
           </provider>
@@ -237,8 +236,8 @@
         <option value="$PROJECT_DIR$/views/pages/laporanPolisi.php" />
         <option value="$PROJECT_DIR$/views/pages/main.js" />
         <option value="$PROJECT_DIR$/php/deleteLaporan.php" />
-        <option value="$PROJECT_DIR$/views/pages/index.php" />
         <option value="$PROJECT_DIR$/views/navigation.php" />
+        <option value="$PROJECT_DIR$/views/pages/index.php" />
       </list>
     </option>
   </component>
@@ -763,12 +762,12 @@
       <workItem from="1624352852011" duration="217000" />
       <workItem from="1624353095892" duration="46000" />
       <workItem from="1624422042738" duration="10177000" />
-      <workItem from="1624511133764" duration="7861000" />
+      <workItem from="1624511133764" duration="8784000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43705000" />
+    <option name="totallyTimeSpent" value="44628000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1256,18 +1255,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/pages/index.php">
+    <entry file="file://$PROJECT_DIR$/views/navigation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="331" column="0" lean-forward="false" selection-start-line="331" selection-start-column="0" selection-end-line="331" selection-end-column="0" />
+        <state relative-caret-position="273">
+          <caret line="18" column="92" lean-forward="false" selection-start-line="18" selection-start-column="91" selection-end-line="18" selection-end-column="92" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/navigation.php">
+    <entry file="file://$PROJECT_DIR$/views/pages/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="95" lean-forward="false" selection-start-line="2" selection-start-column="95" selection-end-line="2" selection-end-column="95" />
+        <state relative-caret-position="446">
+          <caret line="237" column="24" lean-forward="false" selection-start-line="237" selection-start-column="24" selection-end-line="237" selection-end-column="24" />
           <folding />
         </state>
       </provider>

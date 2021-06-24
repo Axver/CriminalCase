@@ -250,7 +250,7 @@ include "../../php/connect.php";
                                                     </a>
                                                 </td>
                                                 <td>
-                                                    <a class="nav-link" href="index.php">
+                                                    <a class="nav-link" href="printPDF.php?id=<?php echo $d['no_laporan'] ?>">
                                                         <span class="iconify" data-icon="mdi:printer-outline" data-inline="false"></span>
                                                         <span>Print</span>
 

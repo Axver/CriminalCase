@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5499df52-1cfd-400f-84a3-c33eda3624df" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/pages/printPDF.php" afterPath="$PROJECT_DIR$/views/pages/printPDF.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/deleteLaporan.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/pages/laporanPolisi.php" afterPath="$PROJECT_DIR$/views/pages/laporanPolisi.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/pages/main.js" afterPath="$PROJECT_DIR$/views/pages/main.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,9 +47,35 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/pages/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="394" column="37" lean-forward="false" selection-start-line="394" selection-start-column="37" selection-end-line="394" selection-end-column="37" />
+            <state relative-caret-position="654">
+              <caret line="422" column="35" lean-forward="false" selection-start-line="422" selection-start-column="35" selection-end-line="422" selection-end-column="35" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="deleteLaporan.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php/deleteLaporan.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+              <folding>
+                <marker date="1624521103464" expanded="true" signature="72:117" ph="DELETE FROM " />
+                <marker date="1624521103464" expanded="true" signature="166:203" ph="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="deletePangkat.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/deletePangkat.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="12" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="1" />
+              <folding>
+                <marker date="1624265146971" expanded="true" signature="72:109" ph="DELETE FROM " />
+                <marker date="1624265146971" expanded="true" signature="72:110" ph="DELETE FROM " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,16 +107,16 @@
       <file leaf-file-name="laporanPolisi.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/pages/laporanPolisi.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="252" column="124" lean-forward="false" selection-start-line="252" selection-start-column="124" selection-end-line="252" selection-end-column="124" />
+            <state relative-caret-position="572">
+              <caret line="261" column="94" lean-forward="false" selection-start-line="261" selection-start-column="94" selection-end-line="261" selection-end-column="94" />
               <folding>
-                <marker date="1624518338373" expanded="true" signature="13876:14017" ph="SELECT * FRO... laporan" />
+                <marker date="1624520979867" expanded="true" signature="13876:14017" ph="SELECT * FRO... laporan" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="printPDF.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="printPDF.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/pages/printPDF.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
@@ -120,7 +149,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>dashb</find>
       <find>t</find>
       <find>dashbo</find>
       <find>informasi</find>
@@ -139,7 +167,6 @@
       <find>save</find>
       <find>field co</find>
       <find>add t</find>
-      <find>delete</find>
       <find>simp</find>
       <find>login</find>
       <find>log o</find>
@@ -150,6 +177,8 @@
       <find>gold</find>
       <find>email</find>
       <find>getFie</find>
+      <find>resort</find>
+      <find>delete</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -200,10 +229,11 @@
         <option value="$PROJECT_DIR$/views/pages/manageAccount.php" />
         <option value="$PROJECT_DIR$/views/pages/tentangAplikasi.php" />
         <option value="$PROJECT_DIR$/views/pages/viewLaporan.php" />
-        <option value="$PROJECT_DIR$/views/pages/main.js" />
         <option value="$PROJECT_DIR$/php/getFieldReplace.php" />
-        <option value="$PROJECT_DIR$/views/pages/laporanPolisi.php" />
         <option value="$PROJECT_DIR$/views/pages/printPDF.php" />
+        <option value="$PROJECT_DIR$/views/pages/laporanPolisi.php" />
+        <option value="$PROJECT_DIR$/views/pages/main.js" />
+        <option value="$PROJECT_DIR$/php/deleteLaporan.php" />
       </list>
     </option>
   </component>
@@ -282,28 +312,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tekri" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tekri" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsPDF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -750,12 +758,12 @@
       <workItem from="1624352852011" duration="217000" />
       <workItem from="1624353095892" duration="46000" />
       <workItem from="1624422042738" duration="10177000" />
-      <workItem from="1624511133764" duration="6898000" />
+      <workItem from="1624511133764" duration="7643000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42742000" />
+    <option name="totallyTimeSpent" value="43487000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -817,16 +825,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php/tambahPangkat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <marker date="1624261873082" expanded="true" signature="104:183" ph="INSERT INTO pangkat... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/pages/manageAccountModal.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2354">
@@ -974,17 +972,6 @@
           <folding>
             <marker date="1624336089835" expanded="true" signature="13215:13260" ph="SELECT * FRO... field_code" />
             <marker date="1624336089835" expanded="true" signature="14770:14818" ph="SELECT * FRO... jenis_laporan" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/deletePangkat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="1" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <marker date="1624265146971" expanded="true" signature="72:109" ph="DELETE FROM " />
-            <marker date="1624265146971" expanded="true" signature="72:110" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -1195,14 +1182,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/pages/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="394" column="37" lean-forward="false" selection-start-line="394" selection-start-column="37" selection-end-line="394" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/getField.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -1219,16 +1198,6 @@
           <caret line="5" column="123" lean-forward="false" selection-start-line="5" selection-start-column="123" selection-end-line="5" selection-end-column="123" />
           <folding>
             <marker date="1624517534853" expanded="true" signature="64:185" ph="SELECT * FRO... field_code" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/pages/laporanPolisi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="252" column="124" lean-forward="false" selection-start-line="252" selection-start-column="124" selection-end-line="252" selection-end-column="124" />
-          <folding>
-            <marker date="1624518338373" expanded="true" signature="13876:14017" ph="SELECT * FRO... laporan" />
           </folding>
         </state>
       </provider>
@@ -1254,6 +1223,46 @@
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#17862#17869#0#HTML" expanded="true" />
             <marker date="1624520282734" expanded="true" signature="16616:16783" ph="SELECT * FRO... laporan" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/pages/laporanPolisi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="261" column="94" lean-forward="false" selection-start-line="261" selection-start-column="94" selection-end-line="261" selection-end-column="94" />
+          <folding>
+            <marker date="1624520979867" expanded="true" signature="13876:14017" ph="SELECT * FRO... laporan" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/deletePangkat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <marker date="1624265146971" expanded="true" signature="72:109" ph="DELETE FROM " />
+            <marker date="1624265146971" expanded="true" signature="72:110" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/pages/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="654">
+          <caret line="422" column="35" lean-forward="false" selection-start-line="422" selection-start-column="35" selection-end-line="422" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/deleteLaporan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding>
+            <marker date="1624521103464" expanded="true" signature="72:117" ph="DELETE FROM " />
+            <marker date="1624521103464" expanded="true" signature="166:203" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>

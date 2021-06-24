@@ -259,7 +259,7 @@ include "../../php/connect.php";
                                                 <td>
 
 
-                                                    <a class="nav-link" href="index.php">
+                                                    <a onclick="deleteLaporan('<?php echo $d["no_laporan"] ?>')" class="nav-link" href="#">
                                                         <span class="iconify" data-icon="mdi:delete" data-inline="false"></span>
                                                         <span>Delete</span>
 

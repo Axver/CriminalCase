@@ -418,3 +418,14 @@ function loadReplace()
 
         });
 }
+
+function deleteLaporan(id) {
+    $.post('../../php/deleteLaporan.php', {id:id}, function(response){
+        // console.log(response);
+        swal(response)
+            .then((value) => {
+            location.reload();
+    });
+
+    });
+}

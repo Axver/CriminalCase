@@ -250,6 +250,18 @@ include "../../php/connect.php";
                                     </tr>
                                     </tbody>
                                 </table>
+
+                                <?php
+
+                                $nolap=$_GET['id'];
+                                $sql = "SELECT * FROM laporan LEFT JOIN users ON laporan.no_polisi=users.no_polisi LEFT JOIN jenis_laporan ON laporan.id_jenis=jenis_laporan.id_jenis WHERE no_laporan='$nolap'";
+                                $data=mysqli_query($conn,$sql);
+
+
+                                while($d = mysqli_fetch_array($data)){
+                                    echo $d['template'];
+                                }
+                                ?>
                             </div>
                         </div>
                     </div>

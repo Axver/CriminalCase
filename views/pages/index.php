@@ -4,6 +4,7 @@
 <?php
 include "../header.php";
 include "session.php";
+include "../../php/connect.php";
 ?>
   <body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js" integrity="sha512-VCHVc5miKoln972iJPvkQrUYYq7XpxXzvqNfiul1H4aZDwGBGC0lq373KNleaB2LpnC2a/iNfE5zoRYmB4TRDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -205,84 +206,41 @@ include "session.php";
               <div class="col-md-4 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                      <h4>Laporan Minggu Ini</h4>
-                      <canvas id="myChart" width="400" height="400"></canvas>
-                      <script>
-                          var ctx = document.getElementById('myChart').getContext('2d');
-                          var myChart = new Chart(ctx, {
-                              type: 'bar',
-                              data: {
-                                  labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                                  datasets: [{
-                                      label: '# of Votes',
-                                      data: [12, 19, 3, 5, 2, 3],
-                                      backgroundColor: [
-                                          'rgba(255, 99, 132, 0.2)',
-                                          'rgba(54, 162, 235, 0.2)',
-                                          'rgba(255, 206, 86, 0.2)',
-                                          'rgba(75, 192, 192, 0.2)',
-                                          'rgba(153, 102, 255, 0.2)',
-                                          'rgba(255, 159, 64, 0.2)'
-                                      ],
-                                      borderColor: [
-                                          'rgba(255, 99, 132, 1)',
-                                          'rgba(54, 162, 235, 1)',
-                                          'rgba(255, 206, 86, 1)',
-                                          'rgba(75, 192, 192, 1)',
-                                          'rgba(153, 102, 255, 1)',
-                                          'rgba(255, 159, 64, 1)'
-                                      ],
-                                      borderWidth: 1
-                                  }]
-                              },
-                        
-                          });
-                      </script>
+                      <h4>Laporan Terbaru</h4>
+                      <?php
+
+                      $sql = "SELECT * FROM laporan LEFT JOIN users ON laporan.no_polisi=users.no_polisi LEFT JOIN jenis_laporan ON laporan.id_jenis=jenis_laporan.id_jenis ORDER BY tgl_bulan_thn ASC LIMIT 10 ";
+                      $data=mysqli_query($conn,$sql);
+
+
+                      while($d = mysqli_fetch_array($data)){
+                          ?>
+
+                          <div class="alert alert-success" role="alert">Laporan <?php echo $d['no_laporan'] ?> Oleh Admin <?php echo $d['nama'] ?>- <?php echo $d['tgl_bulan_thn'] ?> </div>
+
+
+                          <?php
+                      }
+                      ?>
                   </div>
                 </div>
               </div>
               <div class="col-md-8 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                      <h4>Kontribusi Admin</h4>
-                      <canvas id="myChart1" width="400" height="400"></canvas>
-                      <script>
-                          var ctx = document.getElementById('myChart1').getContext('2d');
-                          var myChart = new Chart(ctx, {
-                              type: 'pie',
-                              data: {
-                                  labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                                  datasets: [{
-                                      label: '# of Votes',
-                                      data: [12, 19, 3, 5, 2, 3],
-                                      backgroundColor: [
-                                          'rgba(255, 99, 132, 0.2)',
-                                          'rgba(54, 162, 235, 0.2)',
-                                          'rgba(255, 206, 86, 0.2)',
-                                          'rgba(75, 192, 192, 0.2)',
-                                          'rgba(153, 102, 255, 0.2)',
-                                          'rgba(255, 159, 64, 0.2)'
-                                      ],
-                                      borderColor: [
-                                          'rgba(255, 99, 132, 1)',
-                                          'rgba(54, 162, 235, 1)',
-                                          'rgba(255, 206, 86, 1)',
-                                          'rgba(75, 192, 192, 1)',
-                                          'rgba(153, 102, 255, 1)',
-                                          'rgba(255, 159, 64, 1)'
-                                      ],
-                                      borderWidth: 1
-                                  }]
-                              },
-                              options: {
-                                  scales: {
-                                      y: {
-                                          beginAtZero: true
-                                      }
-                                  }
-                              }
-                          });
-                      </script>
+                     <h4>Selamat Datang di Sistem Informasi Pelaporan Tindak Kriminal</h4>
+
+                      <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec sollicitudin tellus. Quisque dolor mi, finibus nec auctor vestibulum, elementum sed mi. Morbi venenatis rhoncus pulvinar. Etiam sit amet elit efficitur, porta lorem vitae, auctor metus. Donec eleifend ut velit malesuada vehicula. Donec est augue, sodales sit amet enim at, auctor consectetur nulla. Sed feugiat erat vitae ornare consequat. Aliquam erat volutpat. Donec consectetur justo rhoncus diam hendrerit, eget scelerisque arcu efficitur. In quis nisi mi. Vivamus iaculis, neque nec mollis fermentum, enim ex ultrices felis, vel ornare quam tortor at ligula. Ut gravida sapien ac cursus dapibus. Vestibulum at mi vitae sapien congue condimentum.
+
+                          Pellentesque sit amet lorem neque. Morbi vel elit et massa sollicitudin accumsan lacinia a lectus. Aenean vitae tempor diam. Donec vel nisi scelerisque, feugiat ex at, ullamcorper tortor. Aenean fringilla ante nisl, et aliquam nulla ornare a. Duis id tempor nisi, vitae pretium tellus. Quisque quis consequat ligula. Suspendisse fringilla vestibulum ex, et rhoncus nulla sollicitudin sit amet. Sed maximus lectus eros, a varius eros vestibulum at. Ut dictum nibh in convallis commodo. Phasellus quis nunc felis. Proin posuere ultricies magna mollis vehicula. Nunc ut arcu at ligula volutpat dignissim in ut massa.
+
+                          Ut tellus augue, semper et magna gravida, finibus iaculis augue. Nam nec lectus dolor. In hac habitasse platea dictumst. Integer cursus nunc a odio pretium vehicula. Vestibulum ultricies ipsum in risus ultricies mollis. Proin ullamcorper lacinia fringilla. Praesent condimentum massa eget erat vestibulum, vitae cursus urna facilisis. Vestibulum eget mi tristique lectus feugiat egestas quis eu turpis. Vestibulum vehicula, ligula in pretium lobortis, libero lacus consequat enim, ac commodo arcu risus nec libero. Integer turpis orci, efficitur at efficitur at, malesuada nec orci. Sed viverra nec elit et semper. Nam hendrerit ultrices justo a auctor.
+
+                          In hac habitasse platea dictumst. Aenean tempor, augue non viverra posuere, nisl felis lobortis enim, eu venenatis risus nunc quis risus. Curabitur eget massa semper, lacinia eros eu, rhoncus elit. Pellentesque tempus hendrerit erat sit amet dapibus. Sed efficitur sem neque, nec vestibulum lectus elementum vehicula. Nunc venenatis dui et ipsum dapibus, ac condimentum justo fringilla. Phasellus ac sapien et justo luctus scelerisque. Nullam vitae lacus ut tortor fermentum dictum vel eget lectus. Ut lorem magna, semper eu aliquam ut, hendrerit sed ipsum. Praesent quis ex varius, malesuada lectus eget, placerat lacus.
+
+                          Donec scelerisque dolor at magna dictum tincidunt. Pellentesque sit amet maximus diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam fermentum ipsum lacus, egestas bibendum ligula aliquam quis. Donec at dictum lacus, vitae posuere lorem. Quisque scelerisque tortor vitae malesuada laoreet. Curabitur accumsan, dui sed pellentesque commodo, urna velit pellentesque turpis, non blandit turpis lectus nec justo. Cras mattis ac nunc non pretium. Sed egestas rhoncus tincidunt. Mauris mollis ipsum luctus sagittis sodales. Nulla lacinia in orci a placerat. Quisque pellentesque auctor nunc, condimentum dignissim justo fermentum sit amet. Aenean faucibus massa sit amet ligula imperdiet, eu imperdiet purus tempor. Nullam ut dapibus lorem.
+                      </p>
                   </div>
                 </div>
               </div>

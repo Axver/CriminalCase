@@ -391,5 +391,30 @@ function simpanBaseLaporan() {
 
 function loadReplace()
 {
-    // alert("test");
+    let id=$("#hiddenLap").val();
+    $.post('../../php/getFieldReplace.php',
+        {id:id}, function(response){
+            // console.log(response);
+
+            console.log(response);
+            let data=JSON.parse(response);
+            console.log(data);
+
+            let length=data.features.length;
+            let i=0;
+
+            while(i<length)
+            {
+                console.log(data.features[i].properties['field_name']);
+                console.log(data.features[i].properties['value']);
+                // $("#generateFiield").append('<input id="'+data.features[i].properties['field_name']+'" class="form-control" type="text" name="'+data.features[i].properties['field_name']+'" placeholder="'+data.features[i].properties['field_name']+'"/> <br/>');
+                findAndReplaceDOMText(document.body, {
+                        find: data.features[i].properties['field_name'],
+                        replace: data.features[i].properties['value']
+                    }
+                );
+                i++;
+            }
+
+        });
 }

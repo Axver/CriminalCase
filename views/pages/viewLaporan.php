@@ -20,7 +20,9 @@ include "../../php/connect.php";
         border: none;
     }
 </style>
+
 <body onload="loadReplace()">
+<script src="libmora/src/findAndReplaceDOMText.js"></script>
 <div class="container-scroller">
 
     <!--Navigasi Disini-->
@@ -257,6 +259,8 @@ include "../../php/connect.php";
                                 }
                                 ?>
                             </div>
+
+                            <input type="text" name="" id="hiddenLap" value="<?php echo $nolap; ?>" hidden>
                         </div>
                     </div>
                 </div>
